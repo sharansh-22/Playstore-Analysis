@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Play Store Review Analytics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-color: #444;
+    }
+
+    .header img {
+      margin: 0 10px;
+      height: 50px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .plot-container {
+  border: 2px solid #555;
+  background-color: #222;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  }
+
+
+    .plot-container h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #ffcc00;
+    }
+
+    iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 8px;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg" alt="Play Store Logo">
+    <h1>Google Play Store Review Analytics</h1>
+  </div>
+
+  <div class="container">
+    <div class="plot-container">
+      <h2>Top 10 Categories</h2>
+      <iframe src="top_10_categories.html"></iframe>
+    </div>
+    <div class="plot-container">
+      <h2>Paid vs Unpaid</h2>
+      <iframe src="paid_vs_unpaid.html"></iframe>
+    </div>
+    <div class="plot-container">
+      <h2>Rating Distribution</h2>
+      <iframe src="rating_distribution.html"></iframe>
+    </div>
+    <div class="plot-container">
+      <h2>Sentiment Score vs Rating</h2>
+      <iframe src="sentiment_score_vs_rating.html"></iframe>
+    </div>
+    <div class="plot-container">
+      <h2>Rating vs Installs</h2>
+      <iframe src="rating_vs_installs.html"></iframe>
+    </div>
+    <div class="plot-container">
+      <h2>Updates per Year</h2>
+      <iframe src="updates_per_year.html"></iframe>
+    </div>
+    <div class="plot-container">
+      <h2>Top 10 Genres by Installs</h2>
+      <iframe src="top_10_genres_by_installs.html"></iframe>
+    </div>
+    <div class="plot-container">
+      <h2>Popular Games by Genre</h2>
+      <iframe src="popular_games_by_genre.html"></iframe>
+    </div>
+    <div class="plot-container">
+      <h2>Average Ratings Over Time</h2>
+      <iframe src="average_ratings_over_time.html"></iframe>
+    </div>
+    <div class="plot-container">
+      <h2>Rating Distribution by Type</h2>
+      <iframe src="rating_distribution_by_type.html"></iframe>
+    </div>
+  </div>
+</body>
+</html>
